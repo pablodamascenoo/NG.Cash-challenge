@@ -1,0 +1,11 @@
+.header {
+  @apply bg-white border-b-2 border-black w-full px-4 flex items-center justify-between;
+}
+
+.title {
+  @apply text-black font-normal font-inder text-2xl;
+}
+
+.logout {
+  @apply bg-white text-black font-normal text-xl font-inder hover:shadow-none;
+}
