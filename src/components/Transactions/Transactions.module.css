@@ -1,0 +1,15 @@
+.transactions_card {
+  @apply max-w-2xl w-[90%] h-72 mt-10 bg-white border-2 border-black shadow-lg flex flex-col items-center gap-8;
+}
+
+.transactions_form {
+  @apply w-full flex flex-row justify-around py-2 border-b-2 border-black;
+}
+
+.transactions_box {
+  @apply w-full h-full flex flex-col gap-2 overflow-y-scroll pb-4;
+}
+
+.transaction_row {
+  @apply grid grid-cols-3 w-full;
+}

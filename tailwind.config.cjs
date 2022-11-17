@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -13,6 +15,10 @@ module.exports = {
       fontFamily: {
         sans: ["IBM Plex Sans", "sans-serif"],
         inder: ["Inder", "sans-serif"],
+      },
+      screens: {
+        xs: "420px",
+        ...defaultTheme.screens,
       },
     },
   },

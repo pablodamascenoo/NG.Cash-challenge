@@ -22,8 +22,13 @@
     @apply text-6xl;
   }
 
-  input {
+  input,
+  select {
     @apply w-44 h-12 focus:shadow-sm outline-none transition duration-300 border-[2px] border-black bg-white font-sans font-bold text-center placeholder:text-gray-400 placeholder:font-sans placeholder:font-bold placeholder:text-center;
+  }
+
+  option {
+    @apply font-normal font-inder;
   }
 
   button {
