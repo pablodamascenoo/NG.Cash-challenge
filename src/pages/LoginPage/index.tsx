@@ -46,7 +46,7 @@ export default function LoginPage() {
         localStorage.setItem("UserInfo", JSON.stringify({ ...data }));
         setUserInfo({ ...data });
         setSubmited(false);
-        navigate("/");
+        navigate("/home");
       })
       .catch((error) => {
         if (!error) return toast.error("server error");
