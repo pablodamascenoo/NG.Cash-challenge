@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  main {
+    @apply w-screen h-screen bg-[#7431F4] flex flex-col items-center overflow-y-scroll;
+  }
+
+  p,
+  button,
+  h3,
+  h4 {
+    @apply text-lg font-sans font-bold;
+  }
+
+  a {
+    @apply font-bold underline;
+  }
+
+  span {
+    @apply text-6xl;
+  }
+
+  input {
+    @apply w-44 h-12 focus:shadow-sm outline-none transition duration-300 border-[2px] border-black bg-white font-sans font-bold text-center placeholder:text-gray-400 placeholder:font-sans placeholder:font-bold placeholder:text-center;
+  }
+
+  button {
+    @apply w-44 h-12 hover:shadow-sm flex justify-center items-center transition duration-300 border-[1px] border-white bg-black text-white;
+  }
+
+  form {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  @layer components {
+    .auth_title {
+      @apply font-normal mb-6 text-4xl underline;
+    }
+
+    .error {
+      @apply text-[10px] text-red-600 text-center;
+    }
+
+    .input_wrapper {
+      @apply w-full flex flex-col items-center h-[4.8rem];
+    }
+  }
+}
