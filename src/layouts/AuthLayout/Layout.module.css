@@ -1,13 +1,13 @@
 .container {
-  @apply flex flex-row justify-around items-start pt-20;
+  @apply flex flex-col gap-10 items-center md:flex-row md:items-start md:justify-around md:pt-20;
 }
 
 .title {
-  @apply font-inder text-8xl text-white;
+  @apply font-inder text-6xl text-white md:text-8xl;
 }
 
 .description {
-  @apply underline text-2xl text-white max-w-sm leading-[68px];
+  @apply underline hidden text-2xl text-white max-w-sm leading-[68px] md:block;
 }
 
 .title_box {
