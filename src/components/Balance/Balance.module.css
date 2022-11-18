@@ -1,0 +1,23 @@
+.card {
+  @apply max-w-sm w-[90%] h-40 mt-10 bg-white border-2 border-black shadow-lg flex flex-col items-center gap-4 sm:gap-6;
+}
+
+.card_text_row {
+  @apply flex h-fit justify-between items-center px-4 pt-4 w-full;
+}
+
+.card_text {
+  @apply font-inder font-normal;
+}
+
+.card_button {
+  @apply w-auto bg-transparent hover:shadow-none h-7;
+}
+
+.balance_row {
+  @apply flex items-center gap-2;
+}
+
+.grey_bar {
+  @apply bg-gray-400 text-transparent select-none;
+}
