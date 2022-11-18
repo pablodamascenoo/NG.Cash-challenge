@@ -60,7 +60,6 @@ export default function Transactions({
 
   return (
     <section className={Styles.transactions_card}>
-      <Toaster />
       <form
         className={Styles.transactions_form}
         onSubmit={handleSubmit(onSubmit)}
@@ -87,7 +86,7 @@ export default function Transactions({
         </button>
       </form>
       <div className={Styles.transactions_box}>
-        {transactions.map((transaction, index) => {
+        {transactions?.map((transaction, index) => {
           const usernameCredited = transaction.creditedAccount.User.username;
           const usernameDebited = transaction.debitedAccount.User.username;
           const userCreditedBoll = usernameCredited === userInfo.username;

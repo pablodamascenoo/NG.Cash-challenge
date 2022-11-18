@@ -10,7 +10,8 @@
   p,
   button,
   h3,
-  h4 {
+  h4,
+  label {
     @apply text-lg font-sans font-bold;
   }
 

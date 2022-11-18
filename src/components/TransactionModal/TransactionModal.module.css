@@ -1,0 +1,15 @@
+.modal {
+  @apply w-[90%] max-w-3xl h-96 bg-white border-2 border-black absolute top-20 flex justify-center items-center;
+}
+
+.hide_modal {
+  @apply hidden;
+}
+
+.form {
+  @apply flex flex-col gap-5;
+}
+
+.close {
+  @apply absolute w-auto h-auto bg-transparent border-none hover:shadow-none top-2 right-2;
+}
