@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserContext from "./contexts/UserContext.js";
+import HomePage from "./pages/HomePage/index.js";
 import LoginPage from "./pages/LoginPage/index.js";
 import RegisterPage from "./pages/RegisterPage/index.js";
 
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/sign-up" element={<RegisterPage />} />
             <Route path="/" element={<LoginPage />} />
+            <Route path="/home" element={<HomePage />} />
           </Routes>
         </BrowserRouter>
       </UserContext.Provider>
