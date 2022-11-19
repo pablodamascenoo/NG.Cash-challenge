@@ -62,7 +62,11 @@ export default function HomePage() {
         closeModal={changeModal}
       />
       <Header />
-      <Balance config={config} openModal={changeModal} />
+      <Balance
+        config={config}
+        openModal={changeModal}
+        name={userInfo.username}
+      />
       <Transactions
         transactions={transactions}
         config={config}

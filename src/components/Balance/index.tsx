@@ -6,9 +6,10 @@ import api from "../../services/api.js";
 type Props = {
   config: { headers: { Authorization: string } };
   openModal: () => any;
+  name: string;
 };
 
-export default function Balance({ config, openModal }: Props) {
+export default function Balance({ config, openModal, name }: Props) {
   const [balance, setBalance] = useState(false);
   const [value, setValue] = useState(0);
 
@@ -28,7 +29,7 @@ export default function Balance({ config, openModal }: Props) {
   return (
     <section className={Styles.card}>
       <div className={Styles.card_text_row}>
-        <p className={Styles.card_text}>Olá, Pablo</p>
+        <p className={Styles.card_text}>Olá, {name}</p>
         <div className={Styles.balance_row}>
           <p
             className={[
